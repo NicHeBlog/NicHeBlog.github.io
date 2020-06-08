@@ -116,8 +116,6 @@ navigation_header:
   url: /categories/
 - title: Search
   url: /search/
-- title: About me
-  url: /about/
 # - title: Elements
 #   url: /elements/
 # - title: Fork Alembic
