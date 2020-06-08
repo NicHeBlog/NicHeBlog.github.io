@@ -68,7 +68,7 @@ collections:
     output: true
     description: "My thoughts and ideas" # The post list page content
     feature_text: |
-      Welcome to the blog
+      Welcome to Nic's Blog
     feature_image: "https://picsum.photos/2560/600?image=866"
 
 # 6. Jekyll collections settings
@@ -108,16 +108,18 @@ favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
 
 # 9. Site navigation
 navigation_header:
-- title: Homes
+- title: Home
   url: /
-- title: Elementss
-  url: /elements/
-- title: Blogs
+  - title: Blog
   url: /blog/
-- title: Categoriess
+- title: Category
   url: /categories/
-- title: Searchs
+- title: Search
   url: /search/
+- title: About me
+  url: /about/
+# - title: Elements
+#   url: /elements/
 # - title: Fork Alembic
 #  url: https://github.com/daviddarnes/alembic
 
@@ -132,7 +134,7 @@ social_links: # Appears in sidebar. Set the urls then uncomment and comment out 
   link: https://darn.es
   RSS: /feed.xml
 
-sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
-  Twitter: "#0d94e7"
-  facebook: "#3B5998"
-  Email: true
+# sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
+#  Twitter: "#0d94e7"
+#  facebook: "#3B5998"
+#  Email: true
