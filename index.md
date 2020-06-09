@@ -3,7 +3,7 @@ title: 记录的价值
 feature_text: |
   ## Welcome To My World
   Niches & Focus: Thoughts, Tech Insights, Personal Growth, Life Moments
-feature_image: "https://picsum.photos/1300/400?image=989"
+feature_image: "https://picsum.photos/id/302/1300/400/"
 excerpt: "知识大爆炸的时代，稍不留神就会被信息裹挟；
 保持对世界清醒的认知，明确的知道自己想要什么以及更重要的是明白自己不想要什么；  
 按照自己节奏生活，在这里记录我的成长与欢乐,分享我的思考与见解。"
