@@ -18,11 +18,11 @@ layout: page
 
 To be a lifelong learner<br>
 如何持续的精进自己，也是作为一个程序员必修的人生课题，<br>
-在这里会记录下我的Roadmap & Vision，以及如何到达那里。<br>
-对技术的追求孜孜不倦，Stay curious and keep growing<br>
+在这里会记录下我的Roadmap和所有的Aha时刻，以及如何一步步到达那里。<br>
+对技术的追求孜孜不倦，Stay curious and keep growing...<br>
 
 
-按照自己节奏生活，记录下成长与欢乐，<br>
+按照自己节奏生活，记录下成长的点滴与欢乐，<br>
 Blog也是一部时光机，可以常常带我重温感动。<br>
 提醒自己，哦，每天记得拥抱家人。<br>
 
