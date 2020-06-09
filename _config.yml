@@ -69,7 +69,7 @@ collections:
     description: "My thoughts and ideas" # The post list page content
     feature_text: |
       Welcome to Nic's Blog
-    feature_image: "https://picsum.photos/2560/600?image=866"
+    feature_image: "https://picsum.photos/id/510/1300/400/"
 
 # 6. Jekyll collections settings
 defaults:
@@ -83,7 +83,7 @@ defaults:
 encoding: utf-8 # Make sure the encoding is right
 lang: en-GB # Set the site language
 title: "Nic Blog" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
+logo: "/assets/logos/NicLogo.jpg" # Site logo, also used in jekyll-seo-tag
 description: "Welcom to Nic's Blog" # Site description and default description, also used in jekyll-seo-tag
 url: "https://nicheblog.github.io/blog/" # Site url, also used in jekyll-seo-tag
 baseurl: ""
