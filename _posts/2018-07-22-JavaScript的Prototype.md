@@ -4,7 +4,7 @@ categories:
 - Tech 
 date: 2018-07-22
 excerpt: "理解JS中的Prototype"
-feature_image: "https://picsum.photos/2560/600?image=872"
+feature_image: "https://picsum.photos/id/116/600/"
 ---
 
 ---
