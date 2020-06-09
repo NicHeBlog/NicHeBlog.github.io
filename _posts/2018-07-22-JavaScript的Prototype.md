@@ -102,6 +102,8 @@ function Person(){
 ```
 
 ![在这里插入图片描述](/assets/JsPrototype/pic01.png "pic01")
+
+
 根据上图可以看出Person对象会自动获得prototyp属性，而prototype也是一个对象，会自动获得一个constructor属性，该属性正是指向Person对象。
 
 当调用构造函数创建一个实例的时候，实例内部将包含一个内部指针（很多浏览器这个指针名字为__proto__）指向构造函数的prototype，这个连接存在于实例和构造函数的prototype之间，而不是实例与构造函数之间。
