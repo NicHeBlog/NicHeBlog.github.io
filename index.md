@@ -15,7 +15,7 @@ layout: page
 * 保持对世界清醒的认知，明确的知道自己想要什么以及更重要的是不想要什么;
 * 按照自己节奏生活，在这里记录我的成长与欢乐，分享我的思考与见解。
 
-![peaceful](https://github.com/NicHeBlog/nicheblog.github.io/blob/master/assets/pic01.png ''peaceful'')
+![peaceful](https://github.com/NicHeBlog/nicheblog.github.io/blob/master/assets/pic01.jpg ''peaceful'')
 
 {% include button.html text="Fork it" icon="github" link="https://github.com/daviddarnes/alembic" color="#0366d6" %} {% include button.html text="Tweet it" icon="twitter" link="https://twitter.com/intent/tweet/?url=https://alembic.darn.es&text=Alembic%20-%20A%20Jekyll%20boilerplate%20theme&via=DavidDarnes" color="#0d94e7" %} {% include button.html text="Install Alembic ⚗️" link="https://github.com/daviddarnes/alembic#installation" %} 
 
