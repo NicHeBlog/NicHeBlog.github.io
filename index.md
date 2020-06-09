@@ -11,16 +11,23 @@ layout: page
 ---
 
 ---
-知识大爆炸的时代<br>
-稍不留神就会被信息裹挟<br>
-保持对世界清醒的认知<br>
-明确的知道自己想要什么<br>
-以及更重要的是不想要什么<br>
-按照自己节奏生活<br>
-在这里记录我的成长与欢乐<br>
-分享我的思考与见解<br>
+知识大爆炸的时代,稍不留神就会被信息裹挟。<br>
+保持对世界清醒的认知，记录下自己的思考与见解，<br>
+时常帮助我唤醒大脑中褪色的轨迹。<br>
 
-![peaceful](https://miro.medium.com/max/1024/1*aHGYCHjheQh0Uf0z9Xi41Q.jpeg ''peaceful'')
+
+To be a lifelong learner<br>
+如何持续的精进自己，也是作为一个程序员必修的人生课题，<br>
+在这里会记录下我的Roadmap & Vision，以及如何到达那里。<br>
+对技术的追求孜孜不倦，Stay curious and keep growing<br>
+
+
+按照自己节奏生活，记录下成长与欢乐，<br>
+Blog也是一部时光机，可以常常带我重温感动。<br>
+提醒自己，哦，每天记得拥抱家人。<br>
+
+
+![peaceful](https://picsum.photos/id/133/600/400 ''peaceful'')
 
 
 <!--{% include button.html icon="github" link="https://github.com/NicHeBlog" %} {% include button.html text="Tweet it" icon="twitter" link="https://twitter.com/intent/tweet/?url=https://alembic.darn.es&text=Alembic%20-%20A%20Jekyll%20boilerplate%20theme&via=DavidDarnes" color="#0d94e7" %} {% include button.html text="Install Alembic ⚗️" link="https://github.com/daviddarnes/alembic#installation" %} 
