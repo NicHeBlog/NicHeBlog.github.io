@@ -85,7 +85,7 @@ lang: en-GB # Set the site language
 title: "Nic Blog" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "Welcom to Nic's Blog" # Site description and default description, also used in jekyll-seo-tag
-url: "https://nicheblog.github.io" # Site url, also used in jekyll-seo-tag
+url: "https://nicheblog.github.io/blog/" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/nicheblog"
 email: "heningchine@outlook.com"
