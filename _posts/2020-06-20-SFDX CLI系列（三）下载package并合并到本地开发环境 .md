@@ -52,35 +52,39 @@ package.xml中存储了该package的所有的metadata信息。
 ![unpackage](/assets/installPackage/unpackage.png "unpackage")
 
 #### 插播：metadata format和source format的区别
-在salesforce的开发中，metadata format存储方式是一个整体文件，如上文中的package.xml一个文件中存储了所有的object信息以及object下的所有field，listview信息等等<br/>
-在实际开发中，如果多个developer同时在开发，就都在修改这个package.xml文件，会导致merge的问题。
-而source format存储方式就不一样，它会在多个文件中分别存放不同的信息，比如：<br/>
-object本身的信息单独存放在一个.xml文件中，每个field信息单独存放等等。这样developer之间就少了开发冲突。<br/>
+>在salesforce的开发中，metadata format存储方式是一个整体文件，如上文中的package.xml一个文件中存储了所有的object信息以及object下的所有field，listview信息等等<br/>
+>在实际开发中，如果多个developer同时在开发，就都在修改这个package.xml文件，会导致merge的问题。
+>而source format存储方式就不一样，它会在多个文件中分别存放不同的信息，比如：<br/>
+>object本身的信息单独存放在一个.xml文件中，每个field信息单独存放等等。这样developer之间就少了开发冲突。<br/>
+
+插播完毕<br>
 
 
 **下面开始转换下载下来的package metadata format的文件为source format**
 ```
 sfdx force:mdapi:convert -r mdapipackage/
+  // -r/--metadatapath 要转换的package源路径
 ```
 
-这个是metadata format的信息
+这个是metadata format的信息,可以看到只有一个package.xml文件
 
 ![metadataformat](/assets/installPackage/metadataformat.png "metadataformat")
 
-这个是转换之后source format的信息
+这个是转换之后source format的信息，可以看到拆分成了多个.xml文件
 
 ![sourceformat](/assets/installPackage/sourceformat.png "sourceformat")
 
-此时本地存有两份package信息，一份metadata format 一份source format，<br/>
+此时本地存有两份package信息，一份metadata format，一份source format，<br/>
 我们可以将metadata format格式的信息删除了，
 ```
 rm -rf mdapipackage
   //删除package
 ```
+至此，合并完毕。
 
 **小结：**<br/> 
-至此，我们创建了一个项目project<br/>
-我们把package从云端DevHub下载了下来<br/>
+我们创建了一个项目project<br/>
+我们从云端DevHub下载了目标package<br/>
 由于解压之后，package格式是metadata format，我们转换成了source format<br/>
 我们把转换后的package资源都整合到了我们的project中了，可以愉快的在本地二次开发了。<br/>
 等开发完之后，我们还可以把项目打包成package供安装，怎么打包：参见[SFDX CLI系列（二）：创建一个Unlocked Package](https://nicheblog.github.io/tech/2020/06/18/CLI%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAUnlocked-Package/ "SFDX CLI系列（二）：创建一个Unlocked Package")
