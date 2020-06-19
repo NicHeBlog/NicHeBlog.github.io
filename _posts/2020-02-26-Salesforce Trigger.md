@@ -6,7 +6,7 @@ date: 2020-02-26
 excerpt: "Apex Trigger小结"
 feature_image: "https://picsum.photos/2560/600?image=872"
 ---
-<div id="阅读时长20min" style="color:rgb(168,173,172)">阅读时长：120min</div>
+<div id="阅读时长20min" style="color:rgb(168,173,172)">阅读时长：20min</div>
 ---
 #### 什么是Apex Trigger？
 
