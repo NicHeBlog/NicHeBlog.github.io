@@ -9,34 +9,32 @@ feature_image: "https://picsum.photos/id/403/600?image=872"
 
 ---
 #### 总述
-Step 1： 为了模拟真实的开发场景，我们从GitHub上下载一个project到本地环境<br/>
-Step 2： 我们在本地做些修改之后，部署project到一个临时的scratch org中，并在scratch org中创建一个permission set集<br/>
-Step 3： 把在scratch org中做的permission set同步到本地环境<br/>
-Step 4： 在DevHub中创建一个package，把本地的project打包成一个版本，部署安装到DevHub中<br/>
+* Step 1： 为了模拟真实的开发场景，我们从GitHub上下载一个project到本地环境<br/>
+* Step 2： 我们在本地做些修改之后，部署project到一个临时的scratch org中，并在scratch org中创建一个permission set集<br/>
+* Step 3： 把在scratch org中做的permission set同步到本地环境<br/>
+* Step 4： 在DevHub中创建一个package，把本地的project打包成一个版本，部署安装到DevHub中<br/>
 
 #### Step 1 安装project到本地
 VS Code中新建一个Terminal, 
 
-![terminal](/assets/unockedPackage/terminal.png "terminal")
+![terminal](/assets/unlockedPackage/terminal.png "terminal")
 
-克隆GitHub上的项目源码到本地环境
+克隆GitHub上的项目源码到本地环境,并进入project目录
 ```
 git clone https://github.com/developerforce/PermSetUnlockedPackage.git
-```
-进入project目录
-```
+
 cd PermSetUnlockedPackage
 ```
 
 #### Step 2 创建一个临时的scratch org，并配置permission set
-新建一个Scratch org 
+新建一个Scratch org ，输出结果如下：
 ```
 sfdx force:org:create -f config/project-scratch-def.json -s
 ```
 ![createScratchOrg](/assets/unlockedPackage/createScratchOrg.png "createScratchOrg")
 
 
-把本地的metadata推到scratch org中
+把本地的metadata推到scratch org中，可以看到一些object，listView和customtab等信息被同步到云端org
 ```
 sfdx force:source:push
 ```
@@ -47,7 +45,7 @@ sfdx force:source:push
 sfdx force:org:open
 ```
 
-** 在此省略在scratch org中配置permission set的过程。。。**
+>在此省略在scratch org中配置permission set的过程。。。
 
 
 #### Step 3 把scratch org中的permission set同步到本地
@@ -70,7 +68,6 @@ sfdx force:org:delete -u aliasTargetOrg
 ```
 sfdx force:package:create --name salesApps --description "My Package" --packagetype Unlocked --path force-app --nonamespace --targetdevhubusername DevHub
 
-
 备注： 
      --name/-n package的名称为salesApps
      --description/-d package的描述
@@ -78,16 +75,19 @@ sfdx force:package:create --name salesApps --description "My Package" --packaget
      --path/-r  package存放路径
      --targetdevhubusername/-v DevHub的alias
 ```
-![package1](/assets/unlockedPackage/package1.jpeg "package1")
 
 打开本地文件中的sfdx-project.json文件，可以看到，此时文件中多了package的相关信息，如packageAliases,versionName,versionNumber等
-尝试修改versionName和versionNumber参数如下： 
-这样未来package的版本信息初版就是salesApps@Version1.0.0，未来更新的版本为salesApps@Version1.0.0-1，salesApps@Version1.0.0-2等等
+
+![package1](/assets/unlockedPackage/package1.jpeg "package1")
+
+尝试修改versionName和versionNumber参数如下： <br/>
 
 ```
 "versionName": "Version 1.0",
 "versionNumber": "1.0.0.NEXT"
 ```
+这样未来package的版本信息初版就是salesApps@Version1.0.0，<br/>
+未来更新的版本为salesApps@Version1.0.0-1，salesApps@Version1.0.0-2等等<br/>
 
 创建一个package的Version： 
 ```
