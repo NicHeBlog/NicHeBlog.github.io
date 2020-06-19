@@ -6,7 +6,7 @@ date: 2020-06-18
 excerpt: "SFDX Command Line创建一个包含Permission set的Package"
 feature_image: "https://picsum.photos/id/403/600?image=872"
 ---
-
+阅读时长：15min
 ---
 ### 总述
 * --- Step 1： 为了模拟真实的开发场景，我们从GitHub上下载一个project到本地环境<br/>
@@ -18,7 +18,7 @@ feature_image: "https://picsum.photos/id/403/600?image=872"
 ### Step 1 安装project到本地
 VS Code中新建一个Terminal, 
 
-![terminal](/assets/unlockedPackage/terminal.png "terminal")
+![terminal](/assets/unlockedPackage/newterminal.png "terminal")
 
 克隆GitHub上的项目源码到本地环境,并进入project目录
 ```
