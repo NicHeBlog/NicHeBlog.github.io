@@ -6,7 +6,7 @@ date: 2018-07-22
 excerpt: "理解JS中的Prototype"
 feature_image: "https://picsum.photos/id/116/600/"
 ---
-
+<div id="阅读时长35min" style="color:rgb(168,173,172)">阅读时长：35min</div>
 ---
 用过JavaScript的同学们肯定都对prototype如雷贯耳，但是这究竟是个什么东西却让初学者莫衷一是，只知道函数都会有一个prototype属性，可以为其添加函数供实例访问，其它的就不清楚了，最近看了一些JavaScript高级程序设计，终于揭开了其神秘面纱。
 
