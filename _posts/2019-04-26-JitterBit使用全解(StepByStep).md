@@ -6,7 +6,7 @@ date: 2019-04-26
 excerpt: "JitterBit使用手顺"
 feature_image: "https://picsum.photos/2560/600?image=872"
 ---
-
+<div id="阅读时长30min" style="color:rgb(168,173,172)">阅读时长：30min</div>
 ---
 ### 什么是JitterBit?
 Jitterbit 是一款开源的数据集成工具, 用户可以使用Jitterbit 来集成不同的应用, 不同的databases, 以及不同的数据来源.
