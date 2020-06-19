@@ -114,7 +114,7 @@ sfdx force:package:version:promote -p salesApps@1.0.0-1 -v DevHub
      -v DevHub的alias
 ```
 
-### 安装package
+### Step 5 安装package
 至此，package已经打包完成了，你可以随时把这个package安装到任何环境了。
 我们尝试安装package到DevHub中，
 ```
