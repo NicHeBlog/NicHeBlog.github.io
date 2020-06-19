@@ -6,7 +6,7 @@ date: 2020-06-18
 excerpt: "SFDX Command Line创建一个包含Permission set的Package"
 feature_image: "https://picsum.photos/id/403/600?image=872"
 ---
-阅读时长：15min
+<div id="阅读时长15min" style="color:gray">阅读时长：15min</div>
 ---
 ### 总述
 * --- Step 1： 为了模拟真实的开发场景，我们从GitHub上下载一个project到本地环境<br/>
