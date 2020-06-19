@@ -8,13 +8,14 @@ feature_image: "https://picsum.photos/id/403/600?image=872"
 ---
 
 ---
-#### 总述
-* Step 1： 为了模拟真实的开发场景，我们从GitHub上下载一个project到本地环境<br/>
-* Step 2： 我们在本地做些修改之后，部署project到一个临时的scratch org中，并在scratch org中创建一个permission set集<br/>
-* Step 3： 把在scratch org中做的permission set同步到本地环境<br/>
-* Step 4： 在DevHub中创建一个package，把本地的project打包成一个版本，部署安装到DevHub中<br/>
+### 总述
+* --- Step 1： 为了模拟真实的开发场景，我们从GitHub上下载一个project到本地环境<br/>
+* --- Step 2： 我们在本地做些修改之后，部署project到一个临时的scratch org中，并在scratch org中创建一个permission set集<br/>
+* --- Step 3： 把在scratch org中做的permission set同步到本地环境<br/>
+* --- Step 4： 在DevHub中创建一个package，把本地的project打包成一个版本，部署安装到DevHub中<br/>
+* --- Step 5： 安装package
 
-#### Step 1 安装project到本地
+### Step 1 安装project到本地
 VS Code中新建一个Terminal, 
 
 ![terminal](/assets/unlockedPackage/terminal.png "terminal")
@@ -26,7 +27,7 @@ git clone https://github.com/developerforce/PermSetUnlockedPackage.git
 cd PermSetUnlockedPackage
 ```
 
-#### Step 2 创建一个临时的scratch org，并配置permission set
+### Step 2 创建一个临时的scratch org，并配置permission set
 新建一个Scratch org ，输出结果如下：
 ```
 sfdx force:org:create -f config/project-scratch-def.json -s
@@ -48,7 +49,7 @@ sfdx force:org:open
 >在此省略在scratch org中配置permission set的过程。。。
 
 
-#### Step 3 把scratch org中的permission set同步到本地
+### Step 3 把scratch org中的permission set同步到本地
 
 然后把云端scratch org中配置好的permission set下载到本地环境中
 ```
@@ -62,7 +63,7 @@ sfdx force:source:pull
 sfdx force:org:delete -u aliasTargetOrg
 ``` 
 
-#### Step 4 创建package
+### Step 4 创建package
 在我们的DevHub下创建一个package
 
 ```
@@ -113,6 +114,7 @@ sfdx force:package:version:promote -p salesApps@1.0.0-1 -v DevHub
      -v DevHub的alias
 ```
 
+### 安装package
 至此，package已经打包完成了，你可以随时把这个package安装到任何环境了。
 我们尝试安装package到DevHub中，
 ```
