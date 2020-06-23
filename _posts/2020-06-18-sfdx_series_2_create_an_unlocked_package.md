@@ -106,9 +106,10 @@ sfdx force:package:version:create -p salesApps -d force-app -k test1234 --wait 1
 ![package2](/assets/unlockedPackage/package2.png "package2")
 
 Promote一下package的version
-这里要补充的是，package是有状态的，package被初始创建的时候状态都是beta，<br/>
-beta状态的package是不可以直接安装到production环境的，为了保证要安装的package是production ready的<br/>
-我们需要promote the package version to released
+
+>这里要补充的是，package是有状态的，package被初始创建的时候状态都是beta
+>beta状态的package是不可以直接安装到production环境的，为了保证要安装的package是production ready的
+>我们需要promote the package version to released
 
 ```
 sfdx force:package:version:promote -p salesApps@1.0.0-1 -v DevHub
