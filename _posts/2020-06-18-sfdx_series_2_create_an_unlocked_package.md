@@ -136,4 +136,18 @@ Voila！安装成功。
 ![package3](/assets/unlockedPackage/package3.png "package3")
 
 
+**如果未来想更新已经安装的package的信息，可以使用如下命令进行**
+
+```
+sfdx force:package:update -p 0Ho2x000000XZQCCA4 -v MyDevHub -d "new description for package" -n "new package name"
+sfdx force:package:update -p “package alias” -v MyDevHub -d "new description for package" -n "new package name"
+
+备注： 
+     -p/--package package的id或者alias,可以利用sfdx force:package:list -v MyDevHub查出(显示MyDevHub下的所有已安装的package信息)，
+     -v/--targetdevhubusername package所在的DevHub org的alias, 
+     -d/--description 新的description  
+     -n/--name 新的name for package
+```
+
+
 
