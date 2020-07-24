@@ -30,7 +30,7 @@ cd testRetrievePackage
 ```
 
 ### Step 2 从目标org下载一个package到本地环境
-这里我们用 [SFDX CLI系列（二）：创建一个Unlocked Package](https://nicheblog.github.io/tech/2020/06/18/CLI%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAUnlocked-Package/ "SFDX CLI系列（二）：创建一个Unlocked Package")中创建的package salesApps作为目标package<br/>
+这里我们用 [SFDX CLI系列（二）：创建一个Unlocked Package](https://nicheblog.github.io/tech/2020/06/18/sfdx_series_2_create_an_unlocked_package/)中创建的package salesApps作为目标package<br/>
 把package中的内容从云端取到本地,并存储在本地新建文件夹mdapipackage中
 
 ```
@@ -87,7 +87,7 @@ rm -rf mdapipackage
 我们从云端DevHub下载了目标package<br/>
 由于解压之后，package格式是metadata format，我们转换成了source format<br/>
 我们把转换后的package资源都整合到了我们的project中了，可以愉快的在本地二次开发了。<br/>
-等开发完之后，我们还可以把项目打包成package供安装，怎么打包：参见[SFDX CLI系列（二）：创建一个Unlocked Package](https://nicheblog.github.io/tech/2020/06/18/CLI%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAUnlocked-Package/ "SFDX CLI系列（二）：创建一个Unlocked Package")
+等开发完之后，我们还可以把项目打包成package供安装，怎么打包：参见[SFDX CLI系列（二）：创建一个Unlocked Package](https://nicheblog.github.io/tech/2020/06/18/sfdx_series_2_create_an_unlocked_package/)
 
 
 
