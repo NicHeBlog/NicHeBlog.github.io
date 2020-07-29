@@ -45,6 +45,7 @@ feature_image: "https://picsum.photos/id/403/600?image=872"
   ```
 
 ### Part 3 Salesforce端创建Connected App
+<hr>
 * **创建SSL certificate**
 ```
 cd ..
@@ -120,9 +121,3 @@ travis env set USERNAME <替换your Dev Hub username>
 ```
 
 至此使用SFDX配置了CI的流程，具体的执行内容会写在.yml文件中。
-
-
-
-
-
-
