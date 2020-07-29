@@ -123,7 +123,8 @@ travis env set USERNAME <替换your Dev Hub username>
 至此使用SFDX配置了CI的流程，具体的执行内容会写在.yml文件中。
 
 
-**小结**
+##### **小结**
+<hr>
 1. 本地生成SSL Certificate
 2. Salesforce端利用创建的SSL Certificate创建Connected App,并生成consumer key
 3. CI工具利用私钥和consumer key进行双重验证，自动自行yml文件中预设的脚本进行自动化的Unit test.
