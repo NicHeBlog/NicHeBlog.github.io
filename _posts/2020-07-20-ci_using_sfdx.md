@@ -133,3 +133,4 @@ travis env set USERNAME <替换your Dev Hub username>
 ![structure](/assets/ci_using_sfdx/structure.png "structure")
 
 测试一下文件的变更20200906_22:49
+测试一下文件的变更20200906_22:51
