@@ -90,8 +90,3 @@ rm -rf mdapipackage
 等开发完之后，我们还可以把项目打包成package供安装，怎么打包：参见[SFDX CLI系列（二）：创建一个Unlocked Package](https://nicheblog.github.io/tech/2020/06/18/sfdx_series_2_create_an_unlocked_package/)
 
 
-
-测试一下文件2的变更20200906_23:44
-
-
-
