@@ -89,4 +89,4 @@ rm -rf mdapipackage
 我们把转换后的package资源都整合到了我们的project中了，可以愉快的在本地二次开发了。<br/>
 等开发完之后，我们还可以把项目打包成package供安装，怎么打包：参见[SFDX CLI系列（二）：创建一个Unlocked Package](https://nicheblog.github.io/tech/2020/06/18/sfdx_series_2_create_an_unlocked_package/)
 
-
+test cherry-pick funcion2
