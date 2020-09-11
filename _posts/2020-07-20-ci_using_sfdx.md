@@ -132,4 +132,3 @@ travis env set USERNAME <替换your Dev Hub username>
 
 ![structure](/assets/ci_using_sfdx/structure.png "structure")
 
-test cherry-pick function
