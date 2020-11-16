@@ -24,8 +24,10 @@ To be a lifelong learner<br>
 
 按照自己节奏生活，记录下成长的点滴与欢乐，<br>
 Blog也是一部时光机，可以常常带我重温感动。<br>
-提醒自己，哦，每天记得拥抱家人。<br>
+也会时常提醒自己，每天记得拥抱家人！<br>
+<hr/>
 
+[查看博文>](https://nicheblog.github.io/blog/)  
 
 ![peaceful](https://picsum.photos/id/133/600/400 ''peaceful'')
 
