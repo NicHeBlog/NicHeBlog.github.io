@@ -39,6 +39,10 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
 
 
 ### Part 2 一些常用的命令查阅
+以下是一些常用的命令<br/>
+也可以通过Workbench中的info > Metadata Types and Components,
+方便的查看都有哪些metadata type.
+![metadata type](/assets/using_package/metadataType.png "metadata type")
 <hr>
 ##### Custom Object or Custom Setting 
 ```
