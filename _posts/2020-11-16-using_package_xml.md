@@ -2,11 +2,11 @@
 title: 一些常用的package.xml命令 
 categories:
 - Tech 
-date: 2020-07-20
+date: 2020-11-16
 excerpt: "常用的package.xml方便查阅"
 feature_image: "https://picsum.photos/id/870/600?image=872"
 ---
-<div id="阅读时长10min" style="color:rgb(168,173,172)">阅读时长：15min</div>
+<div id="阅读时长10min" style="color:rgb(168,173,172)">阅读时长：10min</div>
 ---
 ### 总述
 使用Visual Studio Code做SF开发时候，连接了dev org之后，有时候需要使用package.xml文件进行配置类发开的as code行为。
@@ -74,3 +74,125 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
         <name>WebLink</name>
     </types>
 ```
+
+##### Custom Tabs 
+```
+    <types>
+        <members>API name of the tab</members>
+        <name>CustomTab</name>
+    </types>
+```
+
+##### Apex Class
+```
+    <types>
+        <members>SampleController</members>
+        <members>SampleControllerTest</members>
+        <name>ApexClass</name>
+    </types>
+```
+
+##### Aura Component
+```
+    <types>
+        <members>SampleAuraComp</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+```
+
+##### List View of Object
+```
+    <types>
+        <members>Custom_object__c.ListViewAPI</members>
+        <name>ListView</name>
+    </types>
+```
+
+##### Flexipage
+```
+    <types>
+        <members>SampleFlexipageAPI</members>
+        <name>FlexiPage</name>
+    </types>
+```
+
+##### Page Layout
+```
+    <types>
+        <members>Lead-CRM Sales Lead Page</members>
+        <name>Layout</name>
+    </types>
+```
+
+##### Compact Page Layout
+```
+    <types>
+        <members>Lead.CRM_Sales_Compact_Layout</members> 
+        <name>CompactLayout</name>
+    </types>
+```
+
+##### Record Type
+```
+    <types>
+        <members>Task.RecordTypeName</members>
+        <name>RecordType</name>
+    </types>
+```
+
+##### Profile
+```
+    <types>
+        <members>ProfileName</members>
+        <name>Profile</name>
+    </types>
+```
+
+##### Picklist Value
+```
+    <types>
+        <members>FieldAPI</members>
+        <name>StandardValueSet</name>
+    </types>
+```
+
+
+##### Lead Status 比较特殊，虽然该字段的API为Status
+```
+    <types>
+        <members>LeadStatus</members> 
+        <name>StandardValueSet</name> 
+    </types>
+```
+
+
+##### Business Process   //lead process
+```
+    <types>
+        <members>Lead.Test Process</members>
+        <name>BusinessProcess</name>
+    </types>
+```
+
+##### Validation Rule
+```
+    <types>
+        <members>Lead.CouldNotChooseConvertedFromPicklist</members>
+        <name>ValidationRule</name>
+    </types>
+```
+
+##### Themes and Branding
+```
+    <types>
+        <members>APIofTheme</members>
+        <name>LightningExperienceTheme</name>
+    </types>
+//上面是创建的主题，下面是具体的主题配置
+    <types>
+        <members>LEXTHEMINGThoughtWorks_Blue</members>    //具体的members名称用上面的命令retrieve之后可得到
+        <name>BrandingSet</name>
+    </types>
+```
+
+....... To Be Continue
