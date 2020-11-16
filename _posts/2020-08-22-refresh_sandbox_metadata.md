@@ -9,9 +9,11 @@ feature_image: "https://picsum.photos/id/403/600?image=872"
 <div id="阅读时长15min" style="color:rgb(168,173,172)">阅读时长：15min</div>
 ---
 #### 目标
-把本地的sfdx project repo deploy到一个sandbox中
 <hr>
+把本地的sfdx project repo deploy到一个sandbox中
+
 #### 步骤
+<hr>
 Step1: <br/>
 首先转换本地source的格式，从Source Format改为Metadata Format，使用以下命令:<br/>
 
@@ -31,7 +33,7 @@ sfdx force:mdapi:deploy -d mdapipackage/  -u nicdevsdb
 -u 指定部署的org alias名称(如果连接了目标org,可以不用指定)<br/>
 
 Step3: <br/>
-查看当前部署的状态 <br/>
+查看当前部署的状态
 方式一：
 sfdx force:mdapi:deploy:report
 terminal中会返回部署的状态
