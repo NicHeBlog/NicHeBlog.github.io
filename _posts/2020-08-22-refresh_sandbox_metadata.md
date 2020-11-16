@@ -37,5 +37,6 @@ Step3: <br/>
 方式一：
 sfdx force:mdapi:deploy:report
 terminal中会返回部署的状态
+
 方式二： 
 打开你的sandbox，setup中选择Deploy Status，可以查看部署状态
