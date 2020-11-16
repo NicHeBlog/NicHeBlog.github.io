@@ -9,9 +9,9 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
 <div id="阅读时长10min" style="color:rgb(168,173,172)">阅读时长：10min</div>
 ---
 ### 总述
-使用Visual Studio Code做SF开发时候，连接了dev org之后，有时候需要使用package.xml文件进行配置类发开的as code行为。
+使用Visual Studio Code做SF开发时候，连接了dev org之后，有时候需要使用package.xml文件进行配置类开发的as code行为。<br/>
 本文总结了一些常用的命令，方便之后的查阅使用，并保持持续更新。<br/>
-* --- Part 1： 一个sample package.xml长什么样子<br/>
+* --- Part 1： 一个sample package.xml长什么样子?<br/>
 * --- Part 2： 一些常用的命令查阅<br/>
 
 
