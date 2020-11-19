@@ -199,4 +199,13 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
     </types>
 ```
 
+##### Global Action
+global action 也是用QuickAction标签来retrieve
+```
+    <types>
+		<members>LogACall</members>
+		<name>QuickAction</name>
+	</types>
+```
+
 ....... To Be Continue
