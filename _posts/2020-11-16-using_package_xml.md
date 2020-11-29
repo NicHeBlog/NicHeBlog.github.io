@@ -1,9 +1,9 @@
 ---
-title: 一些常用的package.xml命令 
+title: Some commonly used package.xml metadata
 categories:
 - Tech 
 date: 2020-11-16
-excerpt: "常用的package.xml方便查阅"
+excerpt: "Commonly used package.xml commands for easy searching"
 feature_image: "https://picsum.photos/id/870/600?image=872"
 ---
 <div id="阅读时长10min" style="color:rgb(168,173,172)">阅读时长：10min</div>
