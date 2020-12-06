@@ -19,7 +19,8 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
 
 ### Part 1 List View的管理
 <hr/>
-首先List View是用来方便的用户创建方便查看的视图，可以展示，过滤以及分组数据。List View也可以在创建之后方便的share给对应的Role或者是一些自建的Group。但是作为管理员应该尽早和业务部门澄清以及取消Manage Public List Views这个权限。不然会造成List混乱的情况发生。后期处理起来比较棘手，下面会说明一下我是如何批量处理系统中上千条List View数据的。
+首先List View是用来方便的用户创建方便查看的视图，可以展示，过滤以及分组数据。List View也可以在创建之后方便的share给对应的Role或者是一些自建的Group。<br/>
+但是作为管理员应该尽早和业务部门澄清以及取消Manage Public List Views这个权限。不然会造成List混乱的情况发生。后期处理起来比较棘手，下面会说明一下我是如何批量处理系统中上千条List View数据的。
 
 
 ### Part 2 List View的删除
@@ -83,6 +84,7 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
     </Package>
   ```
   只需要替换<members>xxx.xxx</members>就可以。
+  ![files](/assets/destructiveChanges/files.png "files")
 
  
  **3. 部署destructiveChanges文件** <br/>
@@ -100,15 +102,14 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
         //示例：zip -r mcw.zip /root/mcw_test 表示将/root/mcw_test/这个目录下所有文件和文件夹打包为当前目录下的 mcw.zip
   ```
   
-  打开Workbench页面，登录后选择migration > Deploy
+  打开Workbench页面，登录后选择migration > Deploy <br/>
   选择刚刚才压缩好的.zip文件，一定要记得**勾选Single Package**，然后选择next。
 
   ![deploy](/assets/destructiveChanges/deploy.png "deploy")
 
-  **4. 总结一下需要注意的事项**
-     - 系统中对于List View的管理，无特殊情况，不要给Profile勾选Manage Public List Views
-     - 创建package.xml文件以及destructiveChanges文件
-     - 记得用命令行进行压缩操作
-     - 别忘记deploy时候勾选Single Package 
-  
+  **4. 总结一下需要注意的事项**<br/>
+     - 系统中对于List View的管理，无特殊情况，不要给Profile勾选Manage Public List Views<br/>
+     - 创建package.xml文件以及destructiveChanges文件<br/>
+     - 记得用命令行进行压缩操作<br/>
+     - 别忘记deploy时候勾选Single Package <br/>
   
