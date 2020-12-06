@@ -19,7 +19,7 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
 
 ### Part 1 List View的管理
 <hr/>
-首先List View是用来方便的用户创建方便查看的视图，可以展示，过滤以及分组数据。List View也可以在创建之后方便的share给对应的Role或者是一些自建的Group。但是作为管理员应该尽早和业务部门澄清以及取消Manage Public List Views这个权限。不然会造成List混乱的情况发生。后期处理比较棘手，下面会说明一下我是如何批量处理系统中上千条List View数据的。
+首先List View是用来方便的用户创建方便查看的视图，可以展示，过滤以及分组数据。List View也可以在创建之后方便的share给对应的Role或者是一些自建的Group。但是作为管理员应该尽早和业务部门澄清以及取消Manage Public List Views这个权限。不然会造成List混乱的情况发生。后期处理起来比较棘手，下面会说明一下我是如何批量处理系统中上千条List View数据的。
 
 
 ### Part 2 List View的删除
@@ -30,8 +30,9 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
 2. 准备destructiveChanges文件
 3. 部署destructiveChanges文件
 4. 一些注意事项
+<br/>
 
-1. **从系统中Retrieve需要处理的文件**
+**1. 从系统中Retrieve需要处理的文件** <br/>
   可以使用[上篇文章](https://nicheblog.github.io/tech/2020/11/16/using_package_xml/)中介绍的方式，准备一下package.xml文件。格式如下：
   ```
     <types>
@@ -51,8 +52,9 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
   >ctrl+A全选，ctrl+shift+L进入待操作的状态，通过←和→可以控制光标的位置进行批量编辑。
 
 
-  2. **准备destructiveChanges文件**
-  需要准备两个文件,一个文件名称为package.xml,内容如下,不同于一般的package.xml文件，这个文件中什么内容也不用写，只需要指明version版本就可以<br/>
+  **2. 准备destructiveChanges文件**<br/>
+  需要准备两个文件,一个文件名称为package.xml,内容如下,不同于一般的package.xml文件，这个文件中什么内容也不用写，只需要指明version版本就可以 <br/>
+
   ```
   <?xml version="1.0" encoding="UTF-8"?>
   <Package xmlns="http://soap.sforce.com/2006/04/metadata">
@@ -83,7 +85,7 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
   只需要替换<members>xxx.xxx</members>就可以。
 
  
- 3. **部署destructiveChanges文件**
+ **3. 部署destructiveChanges文件** <br/>
   把准备好的两个文件放在一个文件夹下，随便命名文件夹，然后压缩文件夹为.zip格式。<br/>
   **此处踩了个坑**，使用Mac系统进行文件压缩的时候，发现明明是压缩成为了.zip格式，每次部署都会遇到'No Package.xml Found'错误。<br/>
   后来发现这个是由于使用Mac电脑进行文件压缩的的时候，系统会创建一些隐藏的文件，也被压缩进了文件夹，部署的时候，Salesforce并不认这些文件，所以报错。<br/>
@@ -103,8 +105,10 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
 
   ![deploy](/assets/destructiveChanges/deploy.png "deploy")
 
-  4. **总结一下需要注意的事项**
+  **4. 总结一下需要注意的事项**
+     - 系统中对于List View的管理，无特殊情况，不要给Profile勾选Manage Public List Views
      - 创建package.xml文件以及destructiveChanges文件
      - 记得用命令行进行压缩操作
      - 别忘记deploy时候勾选Single Package 
+  
   
