@@ -200,12 +200,20 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
 ```
 
 ##### Global Action
-global action 也是用QuickAction标签来retrieve
+  >global action 也是用QuickAction标签来retrieve
 ```
     <types>
 		<members>LogACall</members>
 		<name>QuickAction</name>
 	</types>
+```
+
+##### Static Resource
+```
+    <types>
+        <members>Name_Of_The_Static_Resource</members>
+        <name>StaticResource</name>
+    </types>
 ```
 
 ....... To Be Continue
