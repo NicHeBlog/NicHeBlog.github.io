@@ -117,6 +117,7 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
   ![deploy](/assets/destructiveChanges/deploy.png "deploy")
 
   ### Part 4 总结一下需要注意的事项
+  <hr/>
      - 系统中对于List View的管理，无特殊情况，不要给Profile勾选Manage Public List Views<br/>
      - 创建package.xml文件以及destructiveChanges.xml文件<br/>
      - 记得用命令行进行压缩操作<br/>
