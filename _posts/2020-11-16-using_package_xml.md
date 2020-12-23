@@ -216,4 +216,25 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
     </types>
 ```
 
+##### Account Team Member Role / Opportunity Team Member Role
+```
+    <types>
+        <members>SalesTeamRole</members>
+        <name>StandardValueSet</name>
+    </types>
+
+    //OpportunityTeamMember Role field
+    <types>
+        <members>OpportunityTeamMember.TeamMemberRole</members>
+        <name>CustomField</name>
+    </types>
+
+    //AccountTeamMember Role field
+    <types>
+        <members>AccountTeamMember.TeamMemberRole</members>
+        <name>CustomField</name>
+    </types>
+```
+
+
 ....... To Be Continue
