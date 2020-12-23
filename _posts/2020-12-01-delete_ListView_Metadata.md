@@ -15,6 +15,7 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
 本文总结了如何管理以及删除List View<br/>
 * --- Part 1： List View的管理<br/>
 * --- Part 2： List View的删除<br/>
+* --- Part 3： 小结<br/>
 
 
 ### Part 1 List View的管理
@@ -92,24 +93,31 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
   **此处踩了个坑**，使用Mac系统进行文件压缩的时候，发现明明是压缩成为了.zip格式，每次部署都会遇到'No Package.xml Found'错误。<br/>
   后来发现这个是由于使用Mac电脑进行文件压缩的的时候，系统会创建一些隐藏的文件，也被压缩进了文件夹，部署的时候，Salesforce并不认这些文件，所以报错。<br/>
 
-  解决方案： <br/>
+  **解决方案**： <br/>
   使用命令行进行压缩。先cd命令进入将要压缩的文件夹下，执行命令。
   ```
     zip -r -X destructiveChanges.zip *   
       //表示讲当前目前目录下的所有文件和文件夹打包为当前目录下的destructiveChanges.zip
         //-r   递归处理，将指定目录下的所有文件和子目录一并处理。
         //-X   不保存额外的文件属性
+        //*    通配，会把当前目录下的所有文件和文件夹都打包到destructiveChanges.zip中
+        //也可以这么使用 *.png就只会打包当前目录下的png文件格式。
         //示例：zip -r mcw.zip /root/mcw_test 表示将/root/mcw_test/这个目录下所有文件和文件夹打包为当前目录下的 mcw.zip
+        //扩展 -> 使用unzip命令:
+        //unzip archive.zip 把archive.zip文件进行解压缩
+        //unzip archive.zip -d target-folder 把archive.zip文件进行解压缩到已存在的目标文件夹
   ```
   
-  打开Workbench页面，登录后选择migration > Deploy <br/>
-  选择刚刚才压缩好的.zip文件，一定要记得**勾选Single Package**，然后选择next。
+  打开Workbench页面，登录后选择**migration > Deploy** <br/>
+  选择刚刚才压缩好的.zip文件，一定要记得**勾选Single Package**，<br/>
+  可以选择勾选**Rollback On Error**，有错误的话会回滚版本，<br/>
+  **Test Level**选择RunLocalTests,跑一下系统中除了安装的package包的所有测试 <br/>
+  然后选择Next。
 
   ![deploy](/assets/destructiveChanges/deploy.png "deploy")
 
-  **4. 总结一下需要注意的事项**<br/>
+  ### Part 4 总结一下需要注意的事项
      - 系统中对于List View的管理，无特殊情况，不要给Profile勾选Manage Public List Views<br/>
-     - 创建package.xml文件以及destructiveChanges文件<br/>
+     - 创建package.xml文件以及destructiveChanges.xml文件<br/>
      - 记得用命令行进行压缩操作<br/>
-     - 别忘记deploy时候勾选Single Package <br/>
-  
+     - 别忘记deploy时候勾选Rollback On Error,Single Package <br/>
