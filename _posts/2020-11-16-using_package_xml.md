@@ -245,4 +245,13 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
     </types>
 ```
 
+##### Report
+```
+    <types>
+        <members>CRM Usage Reports/Report_API</members>
+        <name>Report</name>
+    </types>
+    // report的Edit页面，Save下拉可以看到Report的Properties
+```
+
 ....... To Be Continue
