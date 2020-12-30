@@ -255,8 +255,8 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
 ```
 
 ##### Dashboard
-Dashboard比较特别，retrieve时候需要通过workbench找到唯一的名称
-Workbench > info > Metadate types&Component > 选择Dashboard > 找到Dashboard所在的folder > 找到对应的dashboard fullname, 如下图： 
+Dashboard比较特别，retrieve时候需要通过workbench找到唯一的名称<br/>
+Workbench > info > Metadate types&Component > 选择Dashboard > 找到Dashboard所在的folder > 找到对应的dashboard fullname, 如下图： <br/>
 
 ![dashboard](/assets/using_package/dashboard.png "dashboard")
 
