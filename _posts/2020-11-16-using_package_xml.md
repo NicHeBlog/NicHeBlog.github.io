@@ -248,10 +248,12 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
 ##### Report
 ```
     <types>
+        <members>CRMUsageReports</members>
         <members>CRMUsageReports/Report_API</members>
         <name>Report</name>
     </types>
-    // report的Edit页面，Save下拉可以看到Report的Properties,最好folder name没有空格
+    // 需要注意1 ： retrieve report的时候也需要一并把report folder信息一并retrieve
+    // 需要注意2 ： report的Edit页面，Save下拉可以看到Report的Properties,最好folder name没有空格
 ```
 
 ##### Dashboard
