@@ -262,7 +262,7 @@ Workbench > info > Metadate types&Component > 选择Dashboard > 找到Dashboard�
 
 ```
     <types>
-        <members>CRMStandardUserDashboards/WMzeoFyohVbWXvaFwATUkWamxuwJgF</members>
+        <members>CRMStandardUserDashboards/WMzeoFyohVbWXvaFwATUkWaczasdsadawJgF</members>
         <name>Dashboard</name>
     </types>
 ```
