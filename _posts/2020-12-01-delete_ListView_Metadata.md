@@ -126,3 +126,5 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
 
 <currency>CNY</currency>
 <currency>CNY</currency>
+<currency>CNY</currency>
+<currency>CNY</currency>
