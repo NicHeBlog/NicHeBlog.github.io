@@ -13,6 +13,4 @@ test
 test 
 test
 test
-word1
-word1
-word2
+<currency>CNY</currency>
