@@ -124,3 +124,4 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
      - 别忘记deploy时候勾选Rollback On Error,Single Package <br/>
 
 <currency>
+<currency>
