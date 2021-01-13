@@ -282,5 +282,3 @@ Workbench > info > Metadate types&Component > 选择Dashboard > 找到Dashboard�
 1
 2
 3
-4
-5
