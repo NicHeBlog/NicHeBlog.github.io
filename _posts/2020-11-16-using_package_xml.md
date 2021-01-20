@@ -96,6 +96,14 @@ feature_image: "https://picsum.photos/id/870/600?image=872"
     </types>
 ```
 
+##### Apex Trigger
+```
+    <types>
+        <members>TriggerNameAPI</members>
+        <name>ApexTrigger</name>
+    </types>
+```
+
 ##### Aura Component
 ```
     <types>
