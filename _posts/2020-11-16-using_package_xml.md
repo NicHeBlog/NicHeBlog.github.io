@@ -285,6 +285,14 @@ Workbench > info > Metadate types&Component > 选择Dashboard > 找到Dashboard�
     </types>
 ```
 
+##### Lead Convert Field Mapping Relationship
+```
+    <types>
+        <members>*</members>
+        <name>LeadConvertSettings</name>
+    </types>
+```
+
 ##### StandardValueSet 
 ```
     // https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/standardvalueset_names.htm
