@@ -2,7 +2,7 @@
 title: Delete ListView Metadata
 categories:
 - Tech 
-date: 2020-11-16
+date: 2020-12-01
 excerpt: "by using destructiveChanges.xml"
 feature_image: "https://picsum.photos/id/870/600?image=872"
 ---
