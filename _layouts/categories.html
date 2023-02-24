@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+{% include site-header.html %}
+
+<main class="main  container">
+
+  <div class="content">
+
+    <article class="article  article--page  typeset">
+
+      <h1>{{ page.title }}</h1>
+
+      {{ content }}
+
+    </article>
+
+    {% include post-categories.html %}
+
+  </div>
+
+  {% if page.aside == true %}{% include site-aside.html align="left" %}{% endif %}
+
+</main>
+<style type="text/css">
+  h3 a {
+       color: #000;
+       background-image: none!important;
+     } 
+  span a{
+       background-image: none!important;
+  }
+</style>
+
+{% include site-footer.html %}
