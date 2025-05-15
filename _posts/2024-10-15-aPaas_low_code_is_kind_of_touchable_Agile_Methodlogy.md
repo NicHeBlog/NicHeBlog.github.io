@@ -1,96 +1,17 @@
 ---
-title: LWC Series2 - LWC Quick Action Release
+title: aPaas/low-code is kind of touchable Agile Methodlogy
 categories:
 - Tech 
-date: 2021-05-15
-excerpt: "LWC Series 2"
-feature_image: "https://picsum.photos/id/870/600?image=872"
+date: 2024-10-15
+excerpt: "aPaas research"
+feature_image: "https://fastly.picsum.photos/id/36/4179/2790.jpg?hmac=OCuYYm0PkDCMwxWhrtoSefG5UDir4O0XCcR2x-aSPjs"
 ---
-<div id="阅读时长15min" style="color:rgb(168,173,172)">阅读时长：15min</div>
+<div id="阅读时长20min" style="color:rgb(168,173,172)">阅读时长：20min</div>
 ---
 
-### 背景介绍
-LWC框架已经发布一年多了，框架也一直也演进优化中。<br/>
-这次的Summer 21 Release终于直接支持了Global Action直接调用LWC component.<br/>
-本文做一个简单的Demo，快速的看一下这个新鲜出炉的功能。
+### 数字化转型浪潮
+在数字化转型的浪潮中，敏捷开发以其快速响应市场变化、高效迭代的特性，在过去的10年里成为软件开发的主流模式。
+近年来，随着云原生技术的不断成熟，低零代码平台概念变得再次火热，成为许多企业实施数字化转型过程中张口必谈的话题之一。处在风口浪尖的低零代码平台行业亦是鱼龙混杂。降本增效，精细化管理运营的理念也成为当前经济形势下企业高管们不约而同的选择。
+快速变化的时代背景下，软件开发也不再是技术团队的专属领域，低零代码平台的开发理念让软件开发过程变得更加直接、灵活和高效。曾经需要投入大量基础设施建设和组织结构调整才能完成的敏捷化改造也变得触手可得，企业内每个人都可以成为创新的发起者和推动者，为企业持续带来更多新动力。
+CodeWave智能开发平台，结合了集团内部大量实践总结，在产品构建之初，便将成熟的敏捷方法论融入到了产品基因中，通过平台丰富多样、开箱即用的功能点将敏捷开发的理念带入到我们的日常开发工作中。
 <br/>
-<br/>
-### Screen Action：正常的popup模态弹框
-新功能发布之前，要想使用LWC框架写一个popup弹框，需要在LWC之外包裹一层Aura component.
-然后通过Object中创建一个Action来调用Aura才行。举个例子： 
-
-```
-<aura:component implements="force:lightningQuickActionWithoutHeader, force:hasRecordId" access="public">
-    <aura:attribute name="recordId" type="String" />
-    <c:testLwcComp recordId="{!v.recordId}" onclose="{!c.handleClose}" />
-</aura:component>
-
-```
-其中testLwcComp是一个LWC Component.<br/>
-事实上，Aura层什么也不做。甚至有时候Aura还会带来一些副作用，比如有时候需要一个loading画面来等待数据加载，设计遮罩层的时候，还要考虑Aura层的问题。<br/>
-这样的事情一去不复返了，新版本release之后，可以如下直接使用。举个例子：
-
-**HTML Part: lwcQuickActionDemo.html**
-```
-<template>
-    <lightning-card title="Hello" icon-name="standard:contact">
-        <div class="slds-var-m-around_medium">Hello {yourname}!</div>
-        <div class="slds-var-m-around_medium">Hello {yourname}!</div>
-        <div class="slds-var-m-around_medium">Hello {yourname}!</div>
-    </lightning-card>
-</template>
-```
-
-**JS Part: lwcQuickActionDemo.js**
-```
-import { LightningElement,api } from 'lwc';
-
-export default class TestLWCAction extends LightningElement {
-    @api yourname;
-    yourname = 'Nic';
-}
-```
-
-**Metadata Part: lwcQuickActionDemo.js-meta.xml**
-<br/>
-这其中需要在targetConfigs中指定actionType为**ScreenAction**
-
-```
-<?xml version="1.0" encoding="UTF-8" ?>
-<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>51.0</apiVersion>
-    <isExposed>true</isExposed>
-    <targets>
-        <target>lightning__AppPage</target>
-        <target>lightning__RecordPage</target>
-        <target>lightning__HomePage</target>
-        <target>lightning__RecordAction</target>
-    </targets>
-    <targetConfigs>
-        <targetConfig targets="lightning__RecordAction">
-        <actionType>ScreenAction</actionType>
-   </targetConfig>
- </targetConfigs>
-</LightningComponentBundle>
-```
-效果如下图,和用Aura包裹后的效果一模一样：<br/>
-![screenAction](/assets/lwcQuickAction/screenAction.png "screenAction")
-
-<br/>
-<br/>
-
-### Headless Action: 直接显示在Quick Action Button下面的弹出框
-
-试了一下，看起来这个功能暂时支持还不是很好，感觉功能好像不是很完备的样子。<br/>
-
-比如，点击出现的弹出框还不能被隐藏掉；内容如果太长的话，整个hightlight panel会被撑开等。<br/>
-
-实现这种效果只需要把上述例子中的xml文件的targetConfigs中actionType改为**Action**即可。
-
-最终效果如下图：<br/>
-
-![headlessAction](/assets/lwcQuickAction/headlessAction.png "headlessAction")
-
-完。
-
->Reference: https://help.salesforce.com/articleView?id=release-notes.rn_lwc_quick_actions.htm&type=5&release=232
